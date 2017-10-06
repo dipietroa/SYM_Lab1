@@ -26,6 +26,7 @@
 package ch.heigvd.sym.template;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -89,7 +90,9 @@ public class MainActivity extends AppCompatActivity {
 					 * But just display a small message before quitting...
 					 */
 					Toast.makeText(MainActivity.this, getResources().getString(R.string.good), Toast.LENGTH_LONG).show();
-					finish();
+					Intent intent = new Intent (MainActivity.this, InfoActivity.class);
+					intent.putExtra("USER_EMAIL", email.getText().toString());
+					startActivity(intent);
 				} else {
 					// Wrong combination, display pop-up dialog and stay on login screen
 					showErrorDialog(mail, passwd);

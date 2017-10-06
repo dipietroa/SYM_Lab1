@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId "ch.heigvd.sym.template"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 22
         versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
     }
@@ -27,4 +27,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'com.android.support.constraint:constraint-layout:+'
+    compile 'com.android.support:design:26.+'
 }

@@ -8,6 +8,6 @@
     <string name="wronglogin">Login failed</string>
     <string name="wrong">Email or Password not recognized</string>
     <string name="good">Valid login, welcome !</string>
-    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_info">Informations</string>
 
 </resources>

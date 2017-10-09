@@ -23,7 +23,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-package ch.heigvd.sym.template;
+package ch.heigvd.sym.lab1;
 
 import android.content.DialogInterface;
 import android.content.Intent;

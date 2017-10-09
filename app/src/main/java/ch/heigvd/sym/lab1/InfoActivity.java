@@ -1,4 +1,4 @@
-package ch.heigvd.sym.template;
+package ch.heigvd.sym.lab1;
 
 import android.Manifest;
 import android.content.Context;

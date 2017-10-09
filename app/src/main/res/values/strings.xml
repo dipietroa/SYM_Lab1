@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SYM Template Activity</string>
+    <string name="app_name">SYM Lab 1</string>
     <string name="email">E-mail</string>
     <string name="psw">Password</string>
     <string name="imei">IMEI</string>

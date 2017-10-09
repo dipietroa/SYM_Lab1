@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SYM Lab 1</string>
+    <string name="email">E-mail</string>
+    <string name="good">Login correct, bienvenue !</string>
+    <string name="imei">IMEI</string>
+    <string name="notvalid">Email non valide</string>
+    <string name="perm_denied">Permissions refusées</string>
+    <string name="perm_denied_msg">Sans les permissions suivantes nous ne pouvons pas afficher l\'IMEI et/ou l\'image de l\'utilisateur</string>
+    <string name="psw">Mot de passe</string>
+    <string name="signin">Se connecter</string>
+    <string name="title_activity_info">Informations</string>
+    <string name="wrong">Email ou mot de passe non reconnu</string>
+    <string name="wronglogin">Echec du login</string>
+</resources>

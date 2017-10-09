@@ -19,7 +19,7 @@
         <activity
             android:name=".InfoActivity"
             android:label="@string/title_activity_info"
-            android:theme="@style/SymTheme.NoActionBar"></activity>
+            android:theme="@style/SymTheme"></activity>
     </application>
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />

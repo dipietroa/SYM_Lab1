@@ -41,7 +41,7 @@ public class InfoActivity extends AppCompatActivity {
                     imei.setText(userImei);
                 }
                 else {
-                    imei.setText("Permission denied");
+                    imei.setText(getResources().getString(R.string.perm_denied));
                 }
                 if (resultSet.isPermissionGranted(Manifest.permission.READ_EXTERNAL_STORAGE)) {
                     File imgPath =  Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
@@ -54,7 +54,7 @@ public class InfoActivity extends AppCompatActivity {
 
             @Override
             public void onRationaleRequested(Permiso.IOnRationaleProvided callback, String... permissions) {
-                Permiso.getInstance().showRationaleInDialog("Permission denied", "Without the following permissions we can't show the IMEI and/or the user picture", null, callback);
+                Permiso.getInstance().showRationaleInDialog(getResources().getString(R.string.perm_denied), getResources().getString(R.string.perm_denied_msg), null, callback);
             }
         }, Manifest.permission.READ_PHONE_STATE, Manifest.permission.READ_EXTERNAL_STORAGE);
 

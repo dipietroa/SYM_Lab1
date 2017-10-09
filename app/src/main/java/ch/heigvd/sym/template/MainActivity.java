@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 					intent.putExtra("USER_EMAIL", email.getText().toString());
 					startActivity(intent);
 				} else if(!mail.contains("@")|| !mail.contains(".")){
-					Toast.makeText(MainActivity.this,"email non valide", Toast.LENGTH_LONG).show();
+					Toast.makeText(MainActivity.this, getResources().getString(R.string.notvalid), Toast.LENGTH_LONG).show();
 				}
 				else{
 					// Wrong combination, display pop-up dialog and stay on login screen

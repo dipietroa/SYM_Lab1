@@ -4,10 +4,14 @@
     <string name="app_name">SYM Template Activity</string>
     <string name="email">E-mail</string>
     <string name="psw">Password</string>
+    <string name="imei">IMEI</string>
     <string name="signin">Sign in</string>
     <string name="wronglogin">Login failed</string>
     <string name="wrong">Email or Password not recognized</string>
+    <string name="notvalid">Email is not valid</string>
     <string name="good">Valid login, welcome !</string>
     <string name="title_activity_info">Informations</string>
+    <string name="perm_denied">Permission denied</string>
+    <string name="perm_denied_msg">Without the following permissions we can\'t show the IMEI and/or the user picture</string>
 
 </resources>

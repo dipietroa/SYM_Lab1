@@ -43,8 +43,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     // Just for test purposes : please destroy !
-	private static final String validEmail      = "toto@tutu.com";
-	private static final String validPassword   = "tata";
+	private static final String[][] validAccount      = {{"toto@tutu.com", "tata"},
+														{"admin@admin.com", "admin"},
+														{"jean@orange.com", "12345678"}};
 
     // GUI elements
 	private EditText email      = null;
@@ -114,7 +115,12 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
 		// Return true if combination valid, false otherwise
-		return (mail.equals(validEmail) && passwd.equals(validPassword));
+		for(int i = 0; i < validAccount.length; i++){
+			if(mail.equals(validAccount[i][0]) && passwd.equals(validAccount[i][1]))
+				return true;
+		}
+
+		return false;
 	}
 	
 	protected void showErrorDialog(String mail, String passwd) {

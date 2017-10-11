@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
 					Toast.makeText(MainActivity.this, getResources().getString(R.string.good), Toast.LENGTH_LONG).show();
 					Intent intent = new Intent (MainActivity.this, InfoActivity.class);
 					intent.putExtra("USER_EMAIL", email.getText().toString());
+					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 					startActivity(intent);
 				} else if(!mail.contains("@")|| !mail.contains(".")){
 					Toast.makeText(MainActivity.this, getResources().getString(R.string.notvalid), Toast.LENGTH_LONG).show();

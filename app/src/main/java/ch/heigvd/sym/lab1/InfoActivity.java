@@ -74,4 +74,10 @@ public class InfoActivity extends AppCompatActivity {
         Permiso.getInstance().onRequestPermissionResult(requestCode, permissions, grantResults);
     }
 
+    @Override
+    public void onBackPressed() {
+        //exemple surcharge bouton back, dans ce cas-ci on ne fait rien
+        //impossible de retrouver l'écran de connexion
+    }
+
 }

@@ -47,7 +47,11 @@ public class InfoActivity extends AppCompatActivity {
                  */
                 if (resultSet.isPermissionGranted(Manifest.permission.READ_PHONE_STATE)) {
                     TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-                    String userImei = telephonyManager.getImei();
+
+                    String userImei = telephonyManager.getDeviceId();
+                    // From android api level 26 (Android 8.0 Oreo)
+                    // String userImei = telephonyManager.getImei();
+
                     imei.setText(userImei);
                 }
                 else {

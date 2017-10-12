@@ -4,6 +4,8 @@
  * Author   : Markus Jaton 2 juillet 2014
  * 			  Fabien Dutoit 20 septembre 2016
  *            IICT / HEIG-VD
+ *
+ * Modified by: Di Pietro Adrian, Cotza Andrea, Moreira Kevin
  *                                       
  * mailto:fabien.dutoit@heig-vd.ch
  * 
@@ -109,7 +111,13 @@ public class MainActivity extends AppCompatActivity {
 			
 		});
 	}
-	
+
+	/**
+	 * Contrôle la validité d'une combinaison mail/mot-de-passe
+	 * @param mail
+	 * @param passwd
+	 * @return
+	 */
 	private boolean isValid(String mail, String passwd) {
         if(mail == null || passwd == null) {
             Log.w(TAG, "isValid(mail, passwd) - mail and passwd cannot be null !");
